@@ -1,8 +1,8 @@
 name: sample
-on : push
+on: push
 jobs:
   print: 
     runs-on: windows-latest
     steps:
     - name: print
-      run: "hii"
+      run: echo "hii"
