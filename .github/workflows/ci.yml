@@ -3,8 +3,15 @@ name: sample
 on: push
 
 jobs:
-  print:
+  git:
     runs-on: windows-latest
     steps:
-    - name: Print a message
-      run: echo "hii"
+    - uses: action/checkout@v3
+      name: git branch checkout
+      with:
+        ref: master
+
+
+    - name: show git branch
+      run: git branch  
+      
