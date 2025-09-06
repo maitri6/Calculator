@@ -1,0 +1,8 @@
+name: sample
+on : push
+jobs:
+  print: 
+    runs-on: ubantu-latest
+    steps:
+    - name: print
+      run: "hii"
